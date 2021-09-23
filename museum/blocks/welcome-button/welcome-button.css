@@ -1,0 +1,15 @@
+.welcome-button {
+    margin: 50px 0 0;
+    background: #710707;
+    border-radius: 10px;
+    height: 75px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 75px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 1);
+    width: 360px;
+}

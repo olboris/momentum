@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/favicon.ico">
     <title>museum</title>
 </head>
 <body>
@@ -30,12 +28,93 @@
         </div>
    </header> 
    <main class="main">
-       <section class="section welcome-section">
-           
+       <section class="section welcome-section section-dark">
+           <div class="container welcome-container">
+               <div class="title-container">
+                   <h1 class="section-title section-title__theme_dark">welcome <br>to the louvre</h1>
+                   <h2 class="subtitle">From the castle to the museum</h2>
+                   <a class="welcome-button">Discover the Louvre</a>
+               </div>
+               <div class="slider">
+                   <div class="foto-container">
+                       <div class="foto foto_active">
+                           <img class="" src="./assets/img/welcome-slider/1.jpeg">
+                       </div>
+                       <div class="foto">
+                           <img class="" src="./assets/img/welcome-slider/2.jpeg">
+                        </div>
+                        <div class="foto">
+                            <img class="" src="./assets/img/welcome-slider/3.jpeg">
+                         </div>
+                        <div class="foto">
+                            <img class="" src="./assets/img/welcome-slider/4.jpeg">
+                        </div>
+                        <div class="foto">
+                            <img class="" src="./assets/img/welcome-slider/5.jpeg">
+                        </div>
+                     </div>
+               </div>
+               <div class="control-panel">
+                   <p class="conntrol-number">01 | 05</p>
+                   <div class="bullets-container">
+                       <img alt="" src="assets/svg/active-slide-bullet.svg"></img>
+                       <img alt="" src="assets/svg/slide-bullet.svg"></img>
+                       <img alt="" src="assets/svg/slide-bullet.svg"></img>
+                       <img alt="" src="assets/svg/slide-bullet.svg"></img>
+                       <img alt="" src="assets/svg/slide-bullet.svg"></img>
+                   </div>
+                   <div class="arrows-container">
+                       <div class="control left">
+                           <div class="arrow left"><img src="./assets/svg/arrow-left.svg"></div>
+                        </div>
+                        <div class="control right">
+                         <div class="arrow right"><img src="assets/svg/arrow-right.svg"></div>
+                        </div>
+                   </div>
+               </div>
+           </div>
        </section>
        <section class="section visiting-section" id="visiting">
         <div class="container">
-               
+            <h2 class="section-title underline-title">virtual tour</h2> 
+            <div class="cards-container">
+                <a href="" class="card">
+                    <img src="./assets/img/visiting-section/royal-place.jpg" alt="Royal Place" class="card__image">
+                    <h3 class="card__title">royal palace</h3>
+                    <p class="card__text">360&deg; Virtual Tour</p>
+                    <p class="card__text">Google Street Panorama View</p>
+                </a>
+                <a href="" class="card">
+                    <img src="./assets/img/visiting-section/denon-wing.jpg" alt="Royal Place" class="card__image">
+                    <h3 class="card__title">denon wing</h3>
+                    <p class="card__text">360&deg; Virtual Tour</p>
+                    <p class="card__text">Google Street Panorama View</p>
+                </a>
+                <a href="" class="card">
+                    <img src="./assets/img/visiting-section/colonnade-perrault.jpg" alt="Royal Place" class="card__image">
+                    <h3 class="card__title">colonnade perrault</h3>
+                    <p class="card__text">360&deg; Virtual Tour</p>
+                    <p class="card__text">Google Street Panorama View</p>
+                </a>
+                <a href="" class="card">
+                    <img src="./assets/img/visiting-section/greek-hall.jpg" alt="Royal Place" class="card__image">
+                    <h3 class="card__title">greek hall</h3>
+                    <p class="card__text">360&deg; Virtual Tour</p>
+                    <p class="card__text">Google Street Panorama View</p>
+                </a>
+                <a href="" class="card">
+                    <img src="./assets/img/visiting-section/mona-lisa.jpg" alt="Royal Place" class="card__image">
+                    <h3 class="card__title">mona lisa</h3>
+                    <p class="card__text">360&deg; Virtual Tour</p>
+                    <p class="card__text">Google Street Panorama View</p>
+                </a>
+                <a href="" class="card">
+                    <img src="./assets/img/visiting-section/night-palace.jpg" alt="Royal Place" class="card__image">
+                    <h3 class="card__title">night-palace</h3>
+                    <p class="card__text">360&deg; Virtual Tour</p>
+                    <p class="card__text">Google Street Panorama View</p>
+                </a>
+            </div>  
         </div>
        </section>
        <section class="section explore-section" id="explore">
@@ -65,7 +144,39 @@
        </section>
    </main>
    <footer class="footer">
-       
+       <div class="container footer-container">
+           <div class="links-container">
+               <div class="logo-container">
+                   <div class="logo-image"></div>
+                   <p class="logo-text">louvre</p>
+                </div>
+                <nav class="footer__menu-container">
+                    <ul class="menu-list menu-list__place_footer">
+                        <li class="menu-point"><a href="#visiting" class="menu-link">Visiting</a></li>
+                        <li class="menu-point"><a href="#explore" class="menu-link">Explore</a></li>
+                        <li class="menu-point"><a href="#video" class="menu-link">Video</a></li>
+                        <li class="menu-point"><a href="#gallery" class="menu-link">Gallery</a></li>
+                        <li class="menu-point"><a href="#tickets" class="menu-link">Tickets</a></li>
+                        <li class="menu-point"><a href="#contacts" class="menu-link">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="social-container">
+                    <ul class="social-list">
+                        <li class="social-point"><a href="https://www.youtube.com/user/louvre" class="menu-link"><img src="./assets/svg/Youtube.svg" alt="YouTube"></a></li>
+                        <li class="social-point"><a href="https://www.instagram.com/museelouvre/" class="menu-link"><img src="./assets/svg/Instagram.svg" alt="Instagram"></a></li>
+                        <li class="social-point"><a href="https://www.facebook.com/museedulouvre" class="menu-link"><img src="assets/svg/Facebook.svg" alt="Facebook"></a></li>
+                        <li class="social-point"><a href="http://twitter.com/museelouvre" class="menu-link"><img src="./assets/svg/Twitter.svg" alt="Twitter"></a></li>
+                        <li class="social-point"><a href="https://www.pinterest.fr/museedulouvre/" class="menu-link"><img src="./assets/svg/Pinterest.svg" alt="Pinterest"></a></li>
+                    </ul>
+                </div>
+           </div>
+           <hr class="">
+           <div class="footer__copyright">
+               <p class="copyright-logo">&copy; 2021</p>
+               <a class="footer__link" href="https://rs.school/js/">The Rolling Scope School</a>
+               <a class="footer__link" href="https://github.com/olboris">Babushkina O.</a>
+           </div>
+       </div>
    </footer>
 </body>
 </html>

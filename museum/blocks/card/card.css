@@ -1,0 +1,10 @@
+@import url(./__image/card__image.css);
+@import url(./__title/card__title.css);
+@import url(./__text/card__text.css);
+
+.card {
+    display: block;
+    width: 440px;
+    height: auto;
+    text-decoration: none;
+}
