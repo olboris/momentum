@@ -14,3 +14,9 @@
     width: 360px;
     text-decoration: none;
 }
+
+.welcome-button:hover {
+    cursor: pointer;
+    background-color: #9D8665;
+    transition: background-color 1s ease-out;
+}

@@ -1,3 +1,26 @@
-@import url(./__container/contacts__container.css);
-@import url(./__address-text/contacts__address-text.css);
-@import url(./__address-title/contacts__address-title.css);
+.contacts__container {
+    margin-top: 103px;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.contacts__address-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+    margin: 0 auto 50px 0;
+}
+
+.contacts__address-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 25px;
+}

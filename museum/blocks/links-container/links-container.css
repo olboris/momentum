@@ -1,6 +1,6 @@
 .links-container {
     display: flex;
     width: 100%;
-    justify-content: space-between;
     height: auto;
+    justify-content: space-between;
 }
