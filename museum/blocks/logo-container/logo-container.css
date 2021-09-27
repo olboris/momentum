@@ -3,7 +3,7 @@
     align-items: center;
     width: auto;
     height: auto;
-    align-self: center;
+    align-self: flex-start;
 }
 
 .logo-container:hover{

@@ -112,26 +112,26 @@
   }
 
 .popup__input_type_email {
-    background-image: url(../../../assets/svg/email.svg);
+    background-image: url(../../assets/svg/email.svg);
     background-position: 15px 17px;
     background-repeat: no-repeat;
 }
 
 .popup__input_type_name {
-    background-image: url(../../../assets/svg/name.svg);
+    background-image: url(../../assets/svg/name.svg);
     background-position: 15px 15px;
     background-repeat: no-repeat;
 }
 
 .popup__input_type_phone {
-    background-image: url(../../../assets/svg/tel.svg);
+    background-image: url(../../assets/svg/tel.svg);
     background-position: 15px 11px;
     background-repeat: no-repeat;
 }
 
 .popup__input_type_ticket {
     appearance: none;
-    background-image: url(../../../assets/svg/ticket-type.svg), url(../../../assets/svg/input-arrow.svg);
+    background-image: url(../../assets/svg/ticket-type.svg), url(../../assets/svg/input-arrow.svg);
     background-position: top 14px left 15px, top 14px right 15px;
     background-repeat: no-repeat, no-repeat;
     padding: 0px 43px;
@@ -149,7 +149,7 @@ select::-ms-expand{
   }
 
   .popup__input_type_time {
-    background-image: url(../../../assets/svg/time.svg), url(../../../assets/svg/input-arrow.svg);
+    background-image: url(../../assets/svg/time.svg), url(../../assets/svg/input-arrow.svg);
     background-position: top 15px left 15px, top 15px right 15px;
     background-repeat: no-repeat, no-repeat;
     padding: 13px 43px;
