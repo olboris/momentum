@@ -1,0 +1,10 @@
+.tickets__subtitle {
+    margin-bottom: 25px;
+    margin-top: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+}

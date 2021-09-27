@@ -1,0 +1,12 @@
+.video__caption-container {
+    position: absolute;
+    z-index: 1;
+    top:15px;
+    left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 406px;
+    height: 40px;
+}

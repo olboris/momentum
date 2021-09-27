@@ -1,0 +1,5 @@
+.popup__input_type_phone {
+    background-image: url(../../../../assets/svg/tel.svg);
+    background-position: 15px 11px;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,10 @@
+@import url(./__text-container/explore__text-container.css);
+@import url(./__text/explore__text.css);
+@import url(./__image/explore__image.css);
+@import url(./__description/explore__description.css);
+@import url(./__text-span/explore__text-span.css);
+
+.explore {
+    display: flex;
+    position: relative;
+}

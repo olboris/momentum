@@ -1,0 +1,11 @@
+.video__range-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 1);
+    height: 85px;
+    align-items: center;
+}

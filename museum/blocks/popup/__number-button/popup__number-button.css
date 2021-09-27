@@ -1,0 +1,8 @@
+.popup__number-button {
+    border: none;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    width: 35px;
+    padding: 0;
+}

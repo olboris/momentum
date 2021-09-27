@@ -1,0 +1,12 @@
+.video__main-play {
+    width: 220px;
+    height: 220px;
+    background: initial;
+    position: absolute;
+    top: 260px;
+    right: 610px;
+    background-size: contain;
+    background-image: url(../../../assets/svg/main-play-button.svg);
+    border: none;
+    padding:0;
+}

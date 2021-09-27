@@ -1,0 +1,9 @@
+.slider {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width:70%;
+    z-index: -1;
+    height: 100%;
+    /*width: 800px;*/
+}

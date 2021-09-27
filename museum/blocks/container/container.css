@@ -1,0 +1,7 @@
+@import url(./__explore/container__explore.css);
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 96%;
+}

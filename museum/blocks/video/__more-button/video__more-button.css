@@ -1,0 +1,12 @@
+.video__more-button {
+    width: 4px;
+    height: 16px;
+    background-color: inherit;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../../assets/svg/more-button.svg);
+    margin-left: 23px;
+    border: none;
+    padding: 0;
+}

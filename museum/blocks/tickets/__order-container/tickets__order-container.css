@@ -1,0 +1,5 @@
+.tickets__order-container {
+    display: flex;
+    justify-content: space-between;
+    width: 660px;
+}
