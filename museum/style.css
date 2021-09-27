@@ -2,6 +2,7 @@
 @import url(./blocks/video-section/video-section.css);
 @import url(./blocks/section-dark/section-dark.css);
 @import url(./blocks/container/container.css);
+@import url(./blocks/video-container/video-container.css);
 @import url(./blocks/welcome-container/welcome-container.css);
 @import url(./blocks/header-container/header-container.css);
 @import url(./blocks/header/header.css);
@@ -36,6 +37,12 @@
 @import url(./blocks/card/card.css);
 @import url(./blocks/explore/explore.css);
 @import url(./blocks/contacts/contacts.css);
+@import url(./blocks/gallery/gallery.css);
+@import url(./blocks/video/video.css);
+@import url(./blocks/tickets/tickets.css);
+@import url(./blocks/paralax/paralax.css);
+@import url(./blocks/popup/popup.css);
+@import url(./blocks/popup/_active/popup_active.css);
 @font-face {
     font-family: Roboto;
     src: url(./assets/fonts/Roboto/Roboto-Regular.ttf);

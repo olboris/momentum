@@ -1,0 +1,13 @@
+.tickets__number-button {
+    border: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+    background-color: white;
+    width: 48px;
+    padding: 0;
+}

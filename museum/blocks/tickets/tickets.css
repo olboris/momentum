@@ -1,0 +1,14 @@
+@import url(./__container/tickets__container.css);
+@import url(./__image/tickets__image.css);
+@import url(./__order-container/tickets__order-container.css);
+@import url(./__type/tickets__type.css);
+@import url(./__subtitle/tickets__subtitle.css);
+@import url(./__text/tickets__text.css);
+@import url(./__text/_place_amount.css/tickets__text_place_amount.css);
+@import url(./__label-container/tickets__label-container.css);
+@import url(./__amount/tickets__amount.css);
+@import url(./__number-container/tickets__number-container.css);
+@import url(./__number-button/tickets__number-button.css);
+@import url(./__number/tickets__number.css);
+@import url(./__buy-button/tickets__buy-button.css);
+@import url(./__amount-container/tickets__amount-container.css);

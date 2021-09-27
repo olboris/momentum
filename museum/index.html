@@ -33,7 +33,7 @@
                <div class="title-container">
                    <h1 class="section-title section-title__theme_dark">welcome <br>to the louvre</h1>
                    <h2 class="subtitle">From the castle to the museum</h2>
-                   <a class="welcome-button">Discover the Louvre</a>
+                   <a href="tours/tour1.html" target="_blank" class="welcome-button">Discover the Louvre</a>
                </div>
                <div class="slider">
                    <div class="foto-container">
@@ -57,18 +57,18 @@
                <div class="control-panel">
                    <p class="conntrol-number">01 | 05</p>
                    <div class="bullets-container">
-                       <img alt="" src="assets/svg/active-slide-bullet.svg"></img>
-                       <img alt="" src="assets/svg/slide-bullet.svg"></img>
-                       <img alt="" src="assets/svg/slide-bullet.svg"></img>
-                       <img alt="" src="assets/svg/slide-bullet.svg"></img>
-                       <img alt="" src="assets/svg/slide-bullet.svg"></img>
+                       <img alt="bullet" src="assets/svg/active-slide-bullet.svg"></img>
+                       <img alt="bullet" src="assets/svg/slide-bullet.svg"></img>
+                       <img alt="bullet" src="assets/svg/slide-bullet.svg"></img>
+                       <img alt="bullet" src="assets/svg/slide-bullet.svg"></img>
+                       <img alt="bullet" src="assets/svg/slide-bullet.svg"></img>
                    </div>
                    <div class="arrows-container">
                        <div class="control left">
-                           <div class="arrow left"><img src="./assets/svg/arrow-left.svg"></div>
+                           <button class="arrow left"><img src="./assets/svg/arrow-left.svg"></button>
                         </div>
                         <div class="control right">
-                         <div class="arrow right"><img src="assets/svg/arrow-right.svg"></div>
+                           <button class="arrow right"><img src="assets/svg/arrow-right.svg"></button>
                         </div>
                    </div>
                </div>
@@ -78,37 +78,37 @@
         <div class="container">
             <h2 class="section-title underline-title">virtual tour</h2> 
             <div class="cards-container">
-                <a href="" class="card">
+                <a href="tours/tour2.html" target="_blank" class="card">
                     <img src="./assets/img/visiting-section/royal-place.jpg" alt="Royal Place" class="card__image">
                     <h3 class="card__title">royal palace</h3>
                     <p class="card__text">360&deg; Virtual Tour</p>
                     <p class="card__text">Google Street Panorama View</p>
                 </a>
-                <a href="" class="card">
+                <a href="tours/tour3.html" target="_blank" class="card">
                     <img src="./assets/img/visiting-section/denon-wing.jpg" alt="Royal Place" class="card__image">
                     <h3 class="card__title">denon wing</h3>
                     <p class="card__text">360&deg; Virtual Tour</p>
                     <p class="card__text">Google Street Panorama View</p>
                 </a>
-                <a href="" class="card">
+                <a href="tours/tour4.html" target="_blank" class="card">
                     <img src="./assets/img/visiting-section/colonnade-perrault.jpg" alt="Royal Place" class="card__image">
                     <h3 class="card__title">colonnade perrault</h3>
                     <p class="card__text">360&deg; Virtual Tour</p>
                     <p class="card__text">Google Street Panorama View</p>
                 </a>
-                <a href="" class="card">
+                <a href="tours/tour5.html" target="_blank" class="card">
                     <img src="./assets/img/visiting-section/greek-hall.jpg" alt="Royal Place" class="card__image">
                     <h3 class="card__title">greek hall</h3>
                     <p class="card__text">360&deg; Virtual Tour</p>
                     <p class="card__text">Google Street Panorama View</p>
                 </a>
-                <a href="" class="card">
+                <a href="tours/tour6.html" target="_blank" class="card">
                     <img src="./assets/img/visiting-section/mona-lisa.jpg" alt="Royal Place" class="card__image">
                     <h3 class="card__title">mona lisa</h3>
                     <p class="card__text">360&deg; Virtual Tour</p>
                     <p class="card__text">Google Street Panorama View</p>
                 </a>
-                <a href="" class="card">
+                <a href="tours/tour7.html" target="_blank" class="card">
                     <img src="./assets/img/visiting-section/night-palace.jpg" alt="Royal Place" class="card__image">
                     <h3 class="card__title">night-palace</h3>
                     <p class="card__text">360&deg; Virtual Tour</p>
@@ -131,20 +131,215 @@
         </div>
        </section>
        <section class="section video-section" id="video">
-        <div class="container">
-               
+        <div class="container video-container">
+            <div class="video__text-container">
+                <h2 class="section-title">video journey</h2>
+                <p class="video__text">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+            </div>
+            <div class="video__player-container">
+                <img src="./assets/img/video/poster0.jpeg" alt="poster0" class="video__poster">
+                <div class="video__range-container">
+                    <button src="" alt="play" class="video__range-play"></button>
+                    <input type="range" value=50 name="" id="" class="video__range video__range_type_progress-bar">
+                    <img src="./assets/svg/volume.svg" alt="volume" class="video__volume-button">
+                    <input type="range" value=40 name="" id="" class="video__range video__range_type_volume">
+                    <button src="" alt="full-screen" class="video__full-screen"></button>
+                </div>
+                <button class="video__main-play"></button>
+            </div>
+            <div class="video__slider">
+                <div class="video__slider-container">
+                    <div class="video__item-container video__item-container_active">
+                        <button class="video__play-button"></button>
+                        <div class="video__caption-container">
+                            <img class="video__logo" alt="logo" src="./assets/svg/video-logo.svg">
+                            <p class="video__caption">Exposition - Le Corps et l'Âme. De Donatello à Michel-Ange. Sculptures italiennes de la Renaissance</p>
+                            <button class="video__more-button"></button>
+                        </div>
+                        <iframe
+                        class="video__item"
+                        src="https://www.youtube.com/embed/aWmJ5DgyWPI"
+                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+                            html,body{height:100%}
+                            img{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+                            </style>
+                            <a href=https://www.youtube.com/embed/zp1BXPX8jcUautoplay=1>
+                            <img src='./assets/img/video/poster3.jpeg' alt='Demo video'>
+                            </a>"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="video__item-container">
+                        <button class="video__play-button"></button>
+                        <div class="video__caption-container">
+                            <img class="video__logo" alt="logo" src="./assets/svg/video-logo.svg">
+                            <p class="video__caption">Welcome to the Louvre - Bienvenue au Louvre - Musée du Louvre</p>
+                            <button class="video__more-button"></button>
+                        </div>
+                        <iframe
+                        class="video__item"
+                        src="https://www.youtube.com/embed/zp1BXPX8jcU"
+                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+                            html,body{height:100%}
+                            img{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+                            </style>
+                            <a href=https://www.youtube.com/embed/zp1BXPX8jcUautoplay=1>
+                            <img src='./assets/img/video/poster0.jpeg' alt='Demo video'>
+                            </a>"
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                        loading="lazy"></iframe>  
+                    </div>
+                    <div class="video__item-container video__item-container_active">
+                        <button class="video__play-button"></button>
+                        <div class="video__caption-container">
+                            <img class="video__logo" alt="logo" src="./assets/svg/video-logo.svg">
+                            <p class="video__caption">Au Louvre ! La Vénus de Milo</p>
+                            <button class="video__more-button"></button>
+                        </div>
+                        <iframe
+                        class="video__item"
+                        src="https://www.youtube.com/embed/Vi5D6FKhRmo"
+                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+                            html,body{height:100%}
+                            img{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+                            </style>
+                            <a href=https://www.youtube.com/embed/zp1BXPX8jcUautoplay=1>
+                            <img src='./assets/img/video/poster1.jpeg' alt='Demo video'>
+                            </a>"
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="video__item-container video__item-container_active">
+                        <button class="video__play-button"></button>
+                        <div class="video__caption-container">
+                            <img class="video__logo" alt="logo" src="./assets/svg/video-logo.svg">
+                            <p class="video__caption">Promenade dans les collections mésopotamiennes avec Ariane Thomas</p>
+                            <button class="video__more-button"></button>
+                        </div>
+                        <iframe
+                        class="video__item" 
+                        src="https://www.youtube.com/embed/NOhDysLnTvY"
+                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+                            html,body{height:100%}
+                            img{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+                            </style>
+                            <a href=https://www.youtube.com/embed/zp1BXPX8jcUautoplay=1>
+                            <img src='./assets/img/video/poster2.jpeg' alt='Demo video'>
+                            </a>"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="video__item-container">
+                        <button class="video__play-button"></button>
+                        <div class="video__caption-container">
+                            <img class="video__logo" alt="logo" src="./assets/svg/video-logo.svg">
+                            <p class="video__caption">Petits contes de Printemps - La ruse du Renard</p>
+                            <button class="video__more-button"></button>
+                        </div>
+                        <iframe
+                        class="video__item"
+                        src="https://www.youtube.com/embed/2OR0OCr6uRE"
+                        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+                            html,body{height:100%}
+                            img{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+                            </style>
+                            <a href=https://www.youtube.com/embed/zp1BXPX8jcUautoplay=1>
+                            <img src='./assets/img/video/poster4.jpeg' alt='Demo video'>
+                            </a>"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            <div class="video__control-panel">
+                <div class="video__control left">
+                    <button class="video__arrow video__arrow_left"></button>
+                </div>
+                <img alt="bullet" class="video__bullet" src="./assets/svg/video-bullet-active.svg"></img>
+                <img alt="bullet" class="video__bullet" src="./assets/svg/video-bullet.svg"></img>
+                <img alt="bullet" class="video__bullet" src="./assets/svg/video-bullet.svg"></img>
+                <img alt="bullet" class="video__bullet" src="./assets/svg/video-bullet.svg"></img>
+                <img alt="bullet" class="video__bullet" src="./assets/svg/video-bullet.svg"></img>
+                <div class="video__control right">
+                    <button class="video__arrow video__arrow_right"></button>
+                     </div>
+                </div>
+            </div>
         </div>
        </section>
-       <section class="section gallery-section" id="gallery">
+       <section class="section section-dark" id="gallery">
         <div class="container">
-               
+            <h2 class="section-title section-title__theme_dark">art gallery</h2>
+            <div class="gallery__container">
+                <div class="gallery__inner-container"></div>
+            </div>   
         </div>
        </section>
        <section class="section tickets-section" id="tickets">
         <div class="container">
-               
+            <h2 class="section-title underline-title">buy tickets</h2>
+            <div class="tickets__container">
+                <img class="tickets__image" alt="image" src="./assets/img/tickets-image.jpg">
+                <div class="tickets__order-container">
+                    <div class="tickets__type">
+                        <h4 class="tickets__subtitle">Ticket Type</h4>
+                        <div class="tickets__label-container">
+                            <label class="">
+                                <input type="radio" name="radio">
+                                <span class="tickets__text">Permanent exhibition</span>
+                            </label>
+                            <label class="">
+                                <input type="radio" name="radio">
+                                <span class="tickets__text">Temporary exhibition</span>
+                            </label>
+                            <label class="">
+                                <input type="radio" name="radio">
+                                <span class="tickets__text">Combined exhibition</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tickets__amount">
+                        <h4 class="tickets__subtitle">Amount</h4>
+                        <div class="tickets__amount-container">
+                            <span class="tickets__text"> Basic 18+</span>
+                            <div class="tickets__number-container">
+                                <button class="tickets__number-button" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                <input type="number" min="0" max="20" value="1" readonly class="tickets__number">
+                                <button class="tickets__number-button" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                            </div>
+                            <span class="tickets__text">Senior 65+</span>
+                            <div class="tickets__number-container">
+                                <button class="tickets__number-button" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                <input type="number" min="0" max="20" value="1" readonly class="tickets__number">
+                                <button class="tickets__number-button" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                            </div>
+                        </div>
+                        <p class="tickets__subtitle">Total $200</p>
+                        <button class="tickets__buy-button">Buy now</button>
+                    </div>
+                </div>
+            </div>
         </div>
        </section>
+       <div class="paralax"></div>
        <section class="section contacts-section" id="contacts">
         <div class="container">
             <h2 class="section-title underline-title">contacts</h2>
@@ -195,5 +390,31 @@
            </div>
        </div>
    </footer>
+   <div class="popup">
+       <div class="popup__container">
+           <form action="" class="popup__form-information">
+               <div class="popup__form-description">
+                   <img class="popup__logo" src="assets/svg/popup-logo.svg">
+                   <h4 class="popup__title">booking tickets</h4>
+                   <p class="popup__subtitle">Tour to Louvre</p>
+               </div>
+               <div class="popup__form-input">
+                   <fieldset class="popup__fieldset">
+                       <input class="popup__input popup__input_type_date" placeholder="Date" type="date">
+                       <input class="popup__input popup__input_type_time" placeholder="Time" type="time">
+                   </fieldset>
+                   <input class="popup__input popup__input_type_name" placeholder="Name" type="text">
+                   <input class="popup__input popup__input_type_email" placeholder="E-mail" type="email">
+                   <input class="popup__input popup__input_type_phone" placeholder="Phone" type="tel">
+                   <select class="popup__input popup__input_type_ticket" placeholder="Ticket type" type="tel">
+               </div>
+           </form>
+           <form action="" class="popup__form-overview"></form>
+       </div>
+       
+
+   </div>
+   <script src="js/gallery.js"></script>
+   <script src="js/video.js"></script>
 </body>
 </html>

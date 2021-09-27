@@ -1,0 +1,7 @@
+.tickets__number-container {
+    display: flex;
+    height: 43px;
+    justify-content: space-between;
+    border: 3px solid #000000;
+    margin: 15px 0;
+}

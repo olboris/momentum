@@ -1,0 +1,8 @@
+.video__control-panel {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto 0;
+    height: 12px;
+}

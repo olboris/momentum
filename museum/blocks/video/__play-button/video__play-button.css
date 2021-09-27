@@ -1,0 +1,12 @@
+.video__play-button {
+    width: 68px;
+    height: 48px;
+    background-color: inherit;
+    background-size: contain;
+    background-image: url(../../../assets/svg/youtube-icon.svg);
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    z-index: 1;
+    border: none;
+}

@@ -1,0 +1,6 @@
+.gallery__container {
+    overflow-y: hidden;
+    width: 100%;
+    height: 1960px;
+    margin-top: 75px;
+}

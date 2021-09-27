@@ -1,0 +1,13 @@
+.video__caption {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 38px;
+    color: #FFFFFF;
+    width: 329px;
+    margin:0 auto 0 10px;
+}

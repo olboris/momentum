@@ -1,0 +1,5 @@
+.popup__input_type_email {
+    background-image: url(../../../../assets/svg/email.svg);
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+}

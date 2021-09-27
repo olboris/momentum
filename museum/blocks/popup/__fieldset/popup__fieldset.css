@@ -1,0 +1,8 @@
+.popup__fieldset {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    border: none;
+    padding: 0;
+}

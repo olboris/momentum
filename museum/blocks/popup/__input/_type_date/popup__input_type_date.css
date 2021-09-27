@@ -1,0 +1,6 @@
+.popup__input_type_date {
+    background-image: url(../../../../assets/svg/date.svg);
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+    width: 141px;
+}
