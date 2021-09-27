@@ -13,17 +13,27 @@
 @import url(./__input/_type_ticket/popup__input_type_ticket.css);
 @import url(./__input/_type_time/popup__input_type_time.css);
 @import url(./__fieldset/popup__fieldset.css);
+@import url(./__close-button/popup__close-button.css);
+@import url(./__numbers/popup__numbers.css);
+@import url(./__number-container/popup__number-container.css);
+@import url(./__entry-tickets/popup__entry-tickets.css);
+@import url(./__ticket-subtitle/popup__ticket-subtitle.css);
+@import url(./__number-button/popup__number-button.css);
+@import url(./__number/popup__number.css);
 
 .popup {
-    display: none;
     position: fixed;
     top: 0px;
-    left: 0px;
+    left: -100%;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100vw;
     height: 100vh;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0.5s, opacity 0.5s linear;
+    animation: hideLeft 1s;
     z-index: 3;
+}
+
+
+@keyframes hideLeft {
+    from {left: 0%}
+    to {left: -100%}
 }

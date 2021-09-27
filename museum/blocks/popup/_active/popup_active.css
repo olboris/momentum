@@ -1,6 +1,10 @@
 .popup_active {
     display: flex;
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0.5s, opacity 0.5s linear;
+    left: 0;
+    animation: showLeft 1s;
+}
+
+@keyframes showLeft {
+    from {left: -100%}
+    to {left: 0%}
 }

@@ -1,5 +1,18 @@
 .popup__input_type_ticket {
-    background-image: url(../../../../assets/svg/ticket-type.svg);
-    background-position: 15px 15px;
-    background-repeat: no-repeat;
+    appearance: none;
+    background-image: url(../../../../assets/svg/ticket-type.svg), url(../../../../assets/svg/input-arrow.svg);
+    background-position: top 14px left 15px, top 14px right 15px;
+    background-repeat: no-repeat, no-repeat;
+    padding: 0px 43px;
+    height: 45px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #030303;
 }
+
+select::-ms-expand{
+    display: none;
+  }

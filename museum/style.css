@@ -43,6 +43,7 @@
 @import url(./blocks/paralax/paralax.css);
 @import url(./blocks/popup/popup.css);
 @import url(./blocks/popup/_active/popup_active.css);
+@import url(./blocks/welcome/welcome.css);
 @font-face {
     font-family: Roboto;
     src: url(./assets/fonts/Roboto/Roboto-Regular.ttf);

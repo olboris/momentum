@@ -1,0 +1,13 @@
+.popup__number {
+    text-align: center;
+    display: inline;
+    width: 35px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #030303;
+    padding: 0;
+    border: none;
+}

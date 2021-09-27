@@ -1,6 +1,20 @@
 .popup__input_type_time {
-    background-image: url(../../../../assets/svg/time.svg);
-    background-position: 15px 15px;
-    background-repeat: no-repeat;
-    width: 141px;
+    background-image: url(../../../../assets/svg/time.svg), url(../../../../assets/svg/input-arrow.svg);
+    background-position: top 15px left 15px, top 15px right 15px;
+    background-repeat: no-repeat, no-repeat;
+    padding: 13px 43px;
+    width: 98px;
 }
+
+.popup__input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
+  ::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #030303;
+  }

@@ -65,10 +65,10 @@
                    </div>
                    <div class="arrows-container">
                        <div class="control left">
-                           <button class="arrow left"><img src="./assets/svg/arrow-left.svg"></button>
+                           <button class="welcome__arrow welcome__arrow_left"></button>
                         </div>
                         <div class="control right">
-                           <button class="arrow right"><img src="assets/svg/arrow-right.svg"></button>
+                           <button class="welcome__arrow welcome__arrow_right"></button>
                         </div>
                    </div>
                </div>
@@ -319,21 +319,21 @@
                     <div class="tickets__amount">
                         <h4 class="tickets__subtitle">Amount</h4>
                         <div class="tickets__amount-container">
-                            <span class="tickets__text"> Basic 18+</span>
+                            <span class="tickets__text">Basic 18+</span>
                             <div class="tickets__number-container">
-                                <button class="tickets__number-button" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                <button class="tickets__number-button" type="button" onclick="this.nextElementSibling.stepDown()">&ndash;</button>
                                 <input type="number" min="0" max="20" value="1" readonly class="tickets__number">
-                                <button class="tickets__number-button" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                <button class="tickets__number-button" type="button" onclick="this.previousElementSibling.stepUp()">&plus;</button>
                             </div>
                             <span class="tickets__text">Senior 65+</span>
                             <div class="tickets__number-container">
-                                <button class="tickets__number-button" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                <button class="tickets__number-button" type="button" onclick="this.nextElementSibling.stepDown()">&ndash;</button>
                                 <input type="number" min="0" max="20" value="1" readonly class="tickets__number">
-                                <button class="tickets__number-button" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                <button class="tickets__number-button" type="button" onclick="this.previousElementSibling.stepUp()">&plus;</button>
                             </div>
                         </div>
-                        <p class="tickets__subtitle">Total $200</p>
-                        <button class="tickets__buy-button">Buy now</button>
+                        <p class="tickets__subtitle">Total &#8364;200</p>
+                        <button class="tickets__buy-button" onclick="openPopup()">Buy now</button>
                     </div>
                 </div>
             </div>
@@ -392,6 +392,7 @@
    </footer>
    <div class="popup">
        <div class="popup__container">
+           <button class="popup__close-button" onclick="closePopup()"></button>
            <form action="" class="popup__form-information">
                <div class="popup__form-description">
                    <img class="popup__logo" src="assets/svg/popup-logo.svg">
@@ -407,14 +408,34 @@
                    <input class="popup__input popup__input_type_email" placeholder="E-mail" type="email">
                    <input class="popup__input popup__input_type_phone" placeholder="Phone" type="tel">
                    <select class="popup__input popup__input_type_ticket" placeholder="Ticket type" type="tel">
+                       <option>Permanent exhibition</option> 
+                       <option>Temporary exhibition</option> 
+                       <option>Combined Admission</option>
+                    </select>
+                    <div class="popup__entry-tickets">
+                        <p class="popup__ticket-subtitle">entry ticket</p>
+                        <div class="popup__numbers">
+                            <span class="popup__text">Basic 18+ (20 &#8364;)</span>
+                            <div class="popup__number-container">
+                                <button class="popup__number-button" type="button" onclick="this.nextElementSibling.stepDown()">&ndash;</button>
+                                <input type="number" min="0" max="20" value="1" readonly class="popup__number">
+                                <button class="popup__number-button" type="button" onclick="this.previousElementSibling.stepUp()">&plus;</button>
+                            </div>
+                            <span class="popup__text">Senior 65+ (10 &#8364;)</span>
+                            <div class="popup__number-container">
+                                <button class="popup__number-button" type="button" onclick="this.nextElementSibling.stepDown()">&ndash;</button>
+                                <input type="number" min="0" max="20" value="1" readonly class="popup__number">
+                                <button class="popup__number-button" type="button" onclick="this.previousElementSibling.stepUp()">&plus;</button>
+                            </div>
+                        </div>
+                    </div>
                </div>
            </form>
            <form action="" class="popup__form-overview"></form>
        </div>
-       
-
    </div>
    <script src="js/gallery.js"></script>
    <script src="js/video.js"></script>
+   <script src="js/popup.js"></script>
 </body>
 </html>
