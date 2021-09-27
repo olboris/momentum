@@ -1,0 +1,10 @@
+.title-container {
+    /*width: 40%;*/
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 390px;
+    z-index: 2;
+}

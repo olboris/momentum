@@ -1,0 +1,12 @@
+.underline-title {
+    position: relative;
+}
+.underline-title::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: rgba(113, 7, 7, 1);
+  }

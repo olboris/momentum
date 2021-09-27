@@ -1,0 +1,17 @@
+.section-title {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    /* or 112% */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin:0;
+    color: rgba(157, 134, 101, 1);
+    text-transform: uppercase;
+}
+
+.section-title__theme_dark {
+    color: rgba(255, 255, 255, 1);
+}

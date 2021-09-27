@@ -1,0 +1,16 @@
+.foto {
+    display: none;
+    position: relative;
+    margin: 0 auto;
+}
+
+.foto_next {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.foto_active {
+    display: block;
+}
