@@ -1,10 +1,33 @@
-@import url(./__text-container/explore__text-container.css);
-@import url(./__text/explore__text.css);
-@import url(./__image/explore__image.css);
-@import url(./__description/explore__description.css);
-@import url(./__text-span/explore__text-span.css);
-
 .explore {
     display: flex;
     position: relative;
+}
+
+.explore__text-span {
+    color: rgba(202, 170, 125, 1);
+}
+
+.explore__text-container {
+    width: 660px; 
+}
+
+.explore__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.explore__image {
+    width: 720px;
+}
+
+.explore__description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    margin-top: 103px;
 }

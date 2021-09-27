@@ -8,7 +8,7 @@
     <link rel="icon" href="./assets/favicon.ico">
     <title>museum</title>
 </head>
-<body>
+<body class="body">
    <header class="header">
        <div class="container header-container">
            <div class="logo-container">
@@ -38,30 +38,30 @@
                <div class="slider">
                    <div class="foto-container">
                        <div class="foto foto_active">
-                           <img class="" src="./assets/img/welcome-slider/1.jpeg">
+                           <img class="" alt="foto" src="./assets/img/welcome-slider/1.jpeg">
                        </div>
                        <div class="foto">
-                           <img class="" src="./assets/img/welcome-slider/2.jpeg">
+                           <img class="" alt="foto" src="./assets/img/welcome-slider/2.jpeg">
                         </div>
                         <div class="foto">
-                            <img class="" src="./assets/img/welcome-slider/3.jpeg">
+                            <img class="" alt="foto" src="./assets/img/welcome-slider/3.jpeg">
                          </div>
                         <div class="foto">
-                            <img class="" src="./assets/img/welcome-slider/4.jpeg">
+                            <img class="" alt="foto" src="./assets/img/welcome-slider/4.jpeg">
                         </div>
                         <div class="foto">
-                            <img class="" src="./assets/img/welcome-slider/5.jpeg">
+                            <img class="" alt="foto" src="./assets/img/welcome-slider/5.jpeg">
                         </div>
                      </div>
                </div>
                <div class="control-panel">
                    <p class="conntrol-number">01 | 05</p>
                    <div class="bullets-container">
-                       <img alt="bullet" src="assets/svg/active-slide-bullet.svg"></img>
-                       <img alt="bullet" src="assets/svg/slide-bullet.svg"></img>
-                       <img alt="bullet" src="assets/svg/slide-bullet.svg"></img>
-                       <img alt="bullet" src="assets/svg/slide-bullet.svg"></img>
-                       <img alt="bullet" src="assets/svg/slide-bullet.svg"></img>
+                       <img class="welcome__bullet" alt="bullet" src="assets/svg/active-slide-bullet.svg">
+                       <img class="welcome__bullet" alt="bullet" src="assets/svg/slide-bullet.svg">
+                       <img class="welcome__bullet" alt="bullet" src="assets/svg/slide-bullet.svg">
+                       <img class="welcome__bullet" alt="bullet" src="assets/svg/slide-bullet.svg">
+                       <img class="welcome__bullet" alt="bullet" src="assets/svg/slide-bullet.svg">
                    </div>
                    <div class="arrows-container">
                        <div class="control left">
@@ -139,11 +139,11 @@
             <div class="video__player-container">
                 <img src="./assets/img/video/poster0.jpeg" alt="poster0" class="video__poster">
                 <div class="video__range-container">
-                    <button src="" alt="play" class="video__range-play"></button>
-                    <input type="range" value=50 name="" id="" class="video__range video__range_type_progress-bar">
+                    <button class="video__range-play"></button>
+                    <input type="range" value="50" class="video__range video__range_type_progress-bar">
                     <img src="./assets/svg/volume.svg" alt="volume" class="video__volume-button">
-                    <input type="range" value=40 name="" id="" class="video__range video__range_type_volume">
-                    <button src="" alt="full-screen" class="video__full-screen"></button>
+                    <input type="range" value="40" class="video__range video__range_type_volume">
+                    <button class="video__full-screen"></button>
                 </div>
                 <button class="video__main-play"></button>
             </div>
@@ -167,7 +167,6 @@
                             <img src='./assets/img/video/poster3.jpeg' alt='Demo video'>
                             </a>"
                         title="YouTube video player"
-                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
                         loading="lazy">
@@ -191,7 +190,6 @@
                             <img src='./assets/img/video/poster0.jpeg' alt='Demo video'>
                             </a>"
                         title="YouTube video player" 
-                        frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen
                         loading="lazy"></iframe>  
@@ -214,7 +212,6 @@
                             <img src='./assets/img/video/poster1.jpeg' alt='Demo video'>
                             </a>"
                         title="YouTube video player" 
-                        frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
                         loading="lazy">
@@ -238,7 +235,6 @@
                             <img src='./assets/img/video/poster2.jpeg' alt='Demo video'>
                             </a>"
                         title="YouTube video player"
-                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
                         loading="lazy">
@@ -262,7 +258,6 @@
                             <img src='./assets/img/video/poster4.jpeg' alt='Demo video'>
                             </a>"
                         title="YouTube video player"
-                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
                         loading="lazy">
@@ -271,15 +266,15 @@
                 </div>
             <div class="video__control-panel">
                 <div class="video__control left">
-                    <button class="video__arrow video__arrow_left"></button>
+                    <button class="video__arrow">&laquo;</button>
                 </div>
-                <img alt="bullet" class="video__bullet" src="./assets/svg/video-bullet-active.svg"></img>
-                <img alt="bullet" class="video__bullet" src="./assets/svg/video-bullet.svg"></img>
-                <img alt="bullet" class="video__bullet" src="./assets/svg/video-bullet.svg"></img>
-                <img alt="bullet" class="video__bullet" src="./assets/svg/video-bullet.svg"></img>
-                <img alt="bullet" class="video__bullet" src="./assets/svg/video-bullet.svg"></img>
+                <button class="video__bullet">&bull;</button>
+                <button class="video__bullet">&bull;</button>
+                <button class="video__bullet" >&bull;</button>
+                <button class="video__bullet">&bull;</button>
+                <button class="video__bullet">&bull;</button>
                 <div class="video__control right">
-                    <button class="video__arrow video__arrow_right"></button>
+                    <button class="video__arrow">&raquo;</button>
                      </div>
                 </div>
             </div>
@@ -302,15 +297,15 @@
                     <div class="tickets__type">
                         <h4 class="tickets__subtitle">Ticket Type</h4>
                         <div class="tickets__label-container">
-                            <label class="">
+                            <label class="tickets__label">
                                 <input type="radio" name="radio">
                                 <span class="tickets__text">Permanent exhibition</span>
                             </label>
-                            <label class="">
+                            <label class="tickets__label">
                                 <input type="radio" name="radio">
                                 <span class="tickets__text">Temporary exhibition</span>
                             </label>
-                            <label class="">
+                            <label class="tickets__label">
                                 <input type="radio" name="radio">
                                 <span class="tickets__text">Combined exhibition</span>
                             </label>
@@ -374,15 +369,15 @@
                 </nav>
                 <div class="social-container">
                     <ul class="social-list">
-                        <li class="social-point"><a href="https://www.youtube.com/user/louvre" class="menu-link"><img src="./assets/svg/Youtube.svg" alt="YouTube"></a></li>
-                        <li class="social-point"><a href="https://www.instagram.com/museelouvre/" class="menu-link"><img src="./assets/svg/Instagram.svg" alt="Instagram"></a></li>
-                        <li class="social-point"><a href="https://www.facebook.com/museedulouvre" class="menu-link"><img src="assets/svg/Facebook.svg" alt="Facebook"></a></li>
-                        <li class="social-point"><a href="http://twitter.com/museelouvre" class="menu-link"><img src="./assets/svg/Twitter.svg" alt="Twitter"></a></li>
-                        <li class="social-point"><a href="https://www.pinterest.fr/museedulouvre/" class="menu-link"><img src="./assets/svg/Pinterest.svg" alt="Pinterest"></a></li>
+                        <li class="social-point social-point_youtube"><a href="https://www.youtube.com/user/louvre" class="menu-link"></a></li>
+                        <li class="social-point social-point_instagram"><a href="https://www.instagram.com/museelouvre/" class="menu-link"></a></li>
+                        <li class="social-point social-point_facebook"><a href="https://www.facebook.com/museedulouvre" class="menu-link"></a></li>
+                        <li class="social-point social-point_twitter"><a href="http://twitter.com/museelouvre" class="menu-link"></a></li>
+                        <li class="social-point social-point_pinterest"><a href="https://www.pinterest.fr/museedulouvre/" class="menu-link"></a></li>
                     </ul>
                 </div>
            </div>
-           <hr class="">
+           <hr class="footer__line">
            <div class="footer__copyright">
                <p class="copyright-logo">&copy; 2021</p>
                <a class="footer__link" href="https://rs.school/js/">The Rolling Scope School</a>
@@ -393,21 +388,21 @@
    <div class="popup">
        <div class="popup__container">
            <button class="popup__close-button" onclick="closePopup()"></button>
-           <form action="" class="popup__form-information">
+           <form class="popup__form-information">
                <div class="popup__form-description">
-                   <img class="popup__logo" src="assets/svg/popup-logo.svg">
+                   <img alt="logo" class="popup__logo" src="assets/svg/popup-logo.svg">
                    <h4 class="popup__title">booking tickets</h4>
                    <p class="popup__subtitle">Tour to Louvre</p>
                </div>
                <div class="popup__form-input">
                    <fieldset class="popup__fieldset">
-                       <input class="popup__input popup__input_type_date" placeholder="Date" type="date">
-                       <input class="popup__input popup__input_type_time" placeholder="Time" type="time">
+                       <input class="popup__input popup__input_type_date" type="date">
+                       <input class="popup__input popup__input_type_time" type="time">
                    </fieldset>
                    <input class="popup__input popup__input_type_name" placeholder="Name" type="text">
                    <input class="popup__input popup__input_type_email" placeholder="E-mail" type="email">
                    <input class="popup__input popup__input_type_phone" placeholder="Phone" type="tel">
-                   <select class="popup__input popup__input_type_ticket" placeholder="Ticket type" type="tel">
+                   <select class="popup__input popup__input_type_ticket">
                        <option>Permanent exhibition</option> 
                        <option>Temporary exhibition</option> 
                        <option>Combined Admission</option>
@@ -431,7 +426,7 @@
                     </div>
                </div>
            </form>
-           <form action="" class="popup__form-overview"></form>
+           <form class="popup__form-overview"></form>
        </div>
    </div>
    <script src="js/gallery.js"></script>

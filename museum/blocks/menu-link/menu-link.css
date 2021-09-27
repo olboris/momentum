@@ -3,10 +3,16 @@
     font-size: 22px;
     font-style: normal;
     font-weight: 200;
-    line-height: 58px;
+    line-height: 26px;
     letter-spacing: 2px;
     text-align: left;
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
     display: block;
+}
+
+.menu-link:hover {
+    cursor: pointer;
+    color: #9D8665;
+    transition: color 1s ease-out;
 }

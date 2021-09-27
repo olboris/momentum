@@ -1,9 +1,0 @@
-.footer__menu-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 30%;
-    max-width: 393px;
-    height: 128px;
-    flex-wrap: wrap;
-}

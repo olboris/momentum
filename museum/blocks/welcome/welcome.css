@@ -1,3 +1,30 @@
-@import url(./__arrow/welcome__arrow.css);
-@import url(./__arrow/_left/welcome__arrow_left.css);
-@import url(./__arrow/_right/welcome__arrow_right.css);
+.welcome__arrow {
+    border: none;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: inherit;
+    background-size: contain;
+    width: 30px;
+    height: 8px;
+}
+
+.welcome__arrow_right {
+    background-image: url(../../assets/svg/arrow-right.svg);
+}
+
+.welcome__arrow_left {
+    background-image: url(../../assets/svg/arrow-left.svg);
+}
+
+.welcome__arrow:hover{
+    cursor: pointer;
+    color: #9D8665;
+    transition: color 1s ease-out;
+}
+
+.welcome__bullet:hover{
+    cursor: pointer;
+    color: #9D8665;
+    transition: color 1s ease-out;
+}
