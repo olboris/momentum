@@ -142,16 +142,20 @@
 
     .tickets__container {
         margin-top: 83px;
+        height: 440px;
+        column-gap: 80px;
+        justify-content: flex-start;
     }
 
     .tickets__order-container {
         display: flex;
         justify-content: space-between;
-        width: 20%;
+        width: 175px;
     }
 
     .tickets__amount {
         align-items: flex-start;
+        width:100%;
     }
 
     .tickets__amount-container {
@@ -160,12 +164,14 @@
     }
 
     .tickets__number-container {
-        margin: 10px 0;
+        margin: 10px 0 25px;
         width: 100%;
+
     }
 
     .tickets__number-button {
         width: calc(100% / 3);
+        
     }
 
     .tickets__buy-button {
@@ -185,6 +191,19 @@
 
     .tickets__container {
         margin-top: 63px;
+        height: auto;
+    }
+
+    .tickets__number-container {
+        width: 170px;
+        margin-bottom: 25px;
+    }
+
+    .tickets__order-container {
+        width: 46%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -238,5 +257,13 @@
         flex-direction: column;
     }
 
-    
+    .tickets__number-container {
+        margin: 15px 0 20px;
+        width: 170px;
+    }
+
+    .tickets__buy-button {
+        margin-top: 20px;
+    }
+
 }

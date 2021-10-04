@@ -7,3 +7,15 @@
     padding: 60px 0;
 }
 }
+
+@media screen and (max-width: 900px) {
+    .video-section {
+        padding: 40px 0 40px;
+    }
+    }
+
+@media screen and (max-width: 500px) {
+    .video-section {
+        padding: 36px 0 40px;
+    }
+    }
