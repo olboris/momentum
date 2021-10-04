@@ -1,0 +1,21 @@
+.bullets-container {
+    display: flex;
+    width: 180px;
+    height: 16px;
+    align-content: stretch;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1400px) {
+    .bullets-container {
+        height: 12px;
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .bullets-container {
+        height: 7px;
+        width: 75px;
+    }
+}

@@ -1,0 +1,9 @@
+.video-section {
+    padding: 90px 0 75px;
+}
+
+@media screen and (max-width: 1400px) {
+.video-section {
+    padding: 60px 0;
+}
+}

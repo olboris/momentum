@@ -1,0 +1,11 @@
+.arrows-container {
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 650px) {
+    .arrows-container {
+        width: 55px;
+    }
+}

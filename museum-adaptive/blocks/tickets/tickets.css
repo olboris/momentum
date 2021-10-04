@@ -1,0 +1,242 @@
+.tickets__amount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.tickets__amount-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+
+.tickets__buy-button {
+    width: 175px;
+    height: 50px;
+    font-family: Roboto;
+    font-style: normal;font-weight: 300;
+    font-size: 22px;
+    line-height: 50px;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 1);
+    border: none;
+    margin-top: 33px;
+}
+
+.tickets__buy-button:hover {
+    cursor: pointer;
+    background-color: #9D8665;
+    transition: background-color 1s ease-out;
+}
+
+.tickets__container {
+    margin-top: 103px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.tickets__image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tickets__label-container {
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.tickets__label:hover {
+    cursor: pointer;
+}
+
+
+.tickets__number {
+    width: 48px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    padding: 0;
+    border: none;
+}
+
+.tickets__number-button {
+    border: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+    background-color: white;
+    width: 48px;
+    padding: 0;
+}
+
+.tickets__number-button:hover {
+    cursor: pointer;
+}
+
+.tickets__number-container {
+    display: flex;
+    height: 43px;
+    justify-content: space-between;
+    border: 3px solid #000000;
+    margin: 15px 0;
+}
+
+.tickets__order-container {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    max-width: 660px;
+}
+
+.tickets__subtitle {
+    margin-bottom: 25px;
+    margin-top: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.tickets__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.tickets__type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 1400px) {
+    .tickets__image {
+        width: 70%;
+        max-width: 700px;
+    }
+
+    .tickets__type {
+        display: none;
+    }
+
+    .tickets__container {
+        margin-top: 83px;
+    }
+
+    .tickets__order-container {
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+    }
+
+    .tickets__amount {
+        align-items: flex-start;
+    }
+
+    .tickets__amount-container {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .tickets__number-container {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .tickets__number-button {
+        width: calc(100% / 3);
+    }
+
+    .tickets__buy-button {
+        width: 100%;
+        margin: auto 0 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .tickets__image {
+        width: 61%;
+        max-width: 444px;
+    }
+    .tickets__subtitle {
+        margin-bottom: 40px;
+    }
+
+    .tickets__container {
+        margin-top: 63px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .tickets__image {
+        width: 100%;
+        max-width: 700px;
+        height: 200px;
+    }
+
+    .tickets__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tickets__order-container {
+        width: 46%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tickets__amount {
+        align-items: center;
+        width: 100%;;
+    }
+
+    .tickets__subtitle {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .tickets__text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .tickets__buy-button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tickets__image {
+        height: 160px;
+    }
+
+    .tickets__container {
+        flex-direction: column;
+    }
+
+    
+}

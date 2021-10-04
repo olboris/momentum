@@ -1,0 +1,85 @@
+.card {
+    display: block;
+    width: 440px;
+    height: auto;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1400px) {
+    .card {
+        width: 330px;
+    }
+
+    .card__title {
+        font-size: 28px;
+        line-height: 31px;
+}
+
+.card__text {
+    font-size: 16px;
+    line-height: 19px;
+}
+}
+
+@media screen and (max-width:900px) {
+    .card {
+        width: 280px;
+    }
+
+    .card__title {
+        font-size: 22px;
+        line-height: 24px;
+        letter-spacing: 3px;
+}
+}
+
+@media screen and (max-width:500px) {
+    .card__title {
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 5px;
+}
+}
+
+.card__title {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 1);
+    position: relative;
+    margin: 0 0 22px;
+}
+
+.card__title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 70%;
+    height: 2px;
+    background-color: rgba(113, 7, 7, 1);
+}
+
+.card:hover .card__title::after {
+    width: 100%;
+    transition: width 1s ease-out;
+}
+
+.card__text {
+    margin: 10px 0 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.card__image {
+    width: 100%;
+    margin-bottom: 25px;
+}

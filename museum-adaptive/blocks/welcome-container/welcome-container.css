@@ -1,0 +1,19 @@
+.welcome-container {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+/*@media screen and (max-width:1400px) {
+    .welcome-container {
+        height: 395px;
+    }
+}*/
+
+@media screen and (max-width: 900px) {
+    .welcome-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

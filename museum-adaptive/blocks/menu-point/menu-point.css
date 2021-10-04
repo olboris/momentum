@@ -1,0 +1,40 @@
+.menu-point {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.menu-button {
+    display: none;
+    border: none;
+    background-color: inherit;
+    background-image: url(../../assets/svg/menu-logo.svg);
+    background-position: center;
+    background-size: cover;
+    width: 32px;
+    height: 18px;
+}
+
+.menu-button__open {
+    background-image: url(../../assets/svg/menu-logo.svg);
+}
+
+.menu-button__close {
+    background-image: url(../../assets/svg/close-menu.svg);
+}
+
+.menu-button:hover {
+    cursor: pointer;
+    filter: invert(49%) sepia(3%) saturate(4111%) hue-rotate(356deg) brightness(111%) contrast(75%);
+    transition: filter 1s ease-out;
+}
+
+@media screen and (max-width: 1200px) {
+    .menu-button {
+        display: flex;
+    }
+
+    .menu-point {
+        text-align: left;
+        padding: 0;
+    }
+}
