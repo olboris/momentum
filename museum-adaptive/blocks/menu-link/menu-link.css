@@ -28,6 +28,11 @@
         width: 122px;
     }
 
+    .menu-link__place_footer {
+        font-size: 18px;
+    line-height: 21px;
+    }
+
     .menu-link {
         display: flex;
     }

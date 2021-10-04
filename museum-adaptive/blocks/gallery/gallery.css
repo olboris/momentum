@@ -52,37 +52,52 @@
     );
   }
 
-  @media screen and (max-width: 900px) {
-    .gallery__container {
-      height: 1300px;
-      margin-top: 75px;
-  }  
-    
-    .gallery__inner-container{
-          height: 4820px;
-      }
-  
-      .gallery__image {
-          width: calc((100% - 24px) / 2);
-          height: auto;
-      }
-  
-      .gallery__image:nth-child(even) {
-        order: 2;
-      }
-      .gallery__image:nth-child(odd) {
-        order: 1;
-      }
-
-      .gallery__image:nth-child(3) {
-        margin: 0;
-      }
-  }
-
-
 @media screen and (max-width: 1400px) {
   .gallery__container {
-    height: 1060px;
+    height: 1250px;
     margin-top: 60px;
 }  
+.gallery__inner-container{
+  height: 2000px;
+}
+}
+
+
+@media screen and (max-width: 900px) {
+  .gallery__container {
+    height: 1075px;
+    margin-top: 40px;
+}  
+  
+  .gallery__inner-container{
+        height: 4820px;
+    }
+
+    .gallery__image {
+        width: calc((100% - 24px) / 2);
+        height: auto;
+    }
+
+    .gallery__image:nth-child(even) {
+      order: 2;
+    }
+    .gallery__image:nth-child(odd) {
+      order: 1;
+    }
+
+    .gallery__image:nth-child(3) {
+      margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+.gallery__container {
+  height: 640px;
+  margin-top: 40px;
+}
+
+.gallery__inner-container {
+  height: 2020px;
+}
 }

@@ -5,42 +5,6 @@
     text-decoration: none;
 }
 
-@media screen and (max-width:1400px) {
-    .card {
-        width: 330px;
-    }
-
-    .card__title {
-        font-size: 28px;
-        line-height: 31px;
-}
-
-.card__text {
-    font-size: 16px;
-    line-height: 19px;
-}
-}
-
-@media screen and (max-width:900px) {
-    .card {
-        width: 280px;
-    }
-
-    .card__title {
-        font-size: 22px;
-        line-height: 24px;
-        letter-spacing: 3px;
-}
-}
-
-@media screen and (max-width:500px) {
-    .card__title {
-        font-size: 18px;
-        line-height: 20px;
-        letter-spacing: 5px;
-}
-}
-
 .card__title {
     font-family: Forum;
     font-style: normal;
@@ -82,4 +46,46 @@
 .card__image {
     width: 100%;
     margin-bottom: 25px;
+}
+
+@media screen and (max-width:1400px) {
+    .card {
+        width: 330px;
+    }
+
+    .card__title {
+        font-size: 28px;
+        line-height: 31px;
+}
+
+.card__text {
+    font-size: 16px;
+    line-height: 19px;
+}
+}
+
+@media screen and (max-width:900px) {
+    .card {
+        width: 280px;
+    }
+
+    .card__title {
+        font-size: 22px;
+        line-height: 24px;
+        letter-spacing: 3px;
+}
+
+.card__title::after {
+    width: 54%;
+}
+}
+
+@media screen and (max-width:500px) {
+    .card__title {
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 5px;
+}
+
+
 }
