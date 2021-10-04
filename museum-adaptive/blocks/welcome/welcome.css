@@ -1,0 +1,53 @@
+.welcome__arrow {
+    border: none;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: inherit;
+    background-size: contain;
+    width: 30px;
+    height: 8px;
+}
+
+.welcome__bullet {
+    width: 16px;
+    height: 16px;
+}
+
+.welcome__arrow_right {
+    background-image: url(../../assets/svg/arrow-right.svg);
+}
+
+.welcome__arrow_left {
+    background-image: url(../../assets/svg/arrow-left.svg);
+}
+
+.welcome__arrow:hover{
+    cursor: pointer;
+    color: #9D8665;
+    transition: color 1s ease-out;
+}
+
+.welcome__bullet:hover{
+    cursor: pointer;
+    color: #9D8665;
+    transition: color 1s ease-out;
+}
+
+@media screen and (max-width: 1400px) {
+.welcome__bullet {
+    width: 12px;
+    height: 12px;
+}
+}
+
+@media screen and (max-width: 650px) {
+    .welcome__bullet {
+        width: 7px;
+        height: 7px;
+    }
+    .welcome__arrow {
+        width: 20px;
+    }
+
+}

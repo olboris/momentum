@@ -1,0 +1,45 @@
+.control-panel {
+    width: 450px;
+    height: 120px;
+    padding: 0 75px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #030303;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+@media screen and (max-width: 1400px) {
+    .control-panel {
+        font-size: 20px;
+        position: relative;
+        margin: 0 0 0 auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .control-panel {
+        position: relative;
+        height: 40px;
+        margin: 30px auto;
+        width: 55%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .control-panel {
+        width: 100%;
+        max-width: 230px;
+        margin: 20px auto;
+        font-size: 16px;
+    }
+}
