@@ -72,19 +72,23 @@
                         </div>
                    </div>
                    <div class="control-panel">
-                    <p class="conntrol-number">01 | 05</p>
+                    <p class="control-number">01 | 05</p>
+                    <p class="control-number">02 | 05</p>
+                    <p class="control-number">03 | 05</p>
+                    <p class="control-number">04 | 05</p>
+                    <p class="control-number">05 | 05</p>
                     <div class="bullets-container">
-                        <img class="welcome__bullet" alt="bullet" src="assets/svg/active-slide-bullet.svg">
-                        <img class="welcome__bullet" alt="bullet" src="assets/svg/slide-bullet.svg">
-                        <img class="welcome__bullet" alt="bullet" src="assets/svg/slide-bullet.svg">
-                        <img class="welcome__bullet" alt="bullet" src="assets/svg/slide-bullet.svg">
-                        <img class="welcome__bullet" alt="bullet" src="assets/svg/slide-bullet.svg">
+                        <span class="welcome__bullet" onclick="currentSlide(1)"></span>
+                        <span class="welcome__bullet" onclick="currentSlide(2)"></span>
+                        <span class="welcome__bullet" onclick="currentSlide(3)"></span>
+                        <span class="welcome__bullet" onclick="currentSlide(4)"></span>
+                        <span class="welcome__bullet" onclick="currentSlide(5)"></span>
                     </div>
                     <div class="arrows-container">
-                        <div class="control left">
+                        <div class="control left" onclick="plusSlides(-1)">
                             <button class="welcome__arrow welcome__arrow_left"></button>
                          </div>
-                         <div class="control right">
+                         <div class="control right" onclick="plusSlides(1)">
                             <button class="welcome__arrow welcome__arrow_right"></button>
                          </div>
                     </div>
@@ -489,6 +493,7 @@
            </form>
        </div>
    </div>
+   <script src="js/slider.js"></script>
    <script src="js/gallery.js"></script>
    <script src="js/video.js"></script>
    <script src="js/popup.js"></script>
