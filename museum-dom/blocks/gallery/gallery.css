@@ -16,8 +16,16 @@
 }
 
 .gallery__image {
-    width: calc((100% - 68px) / 3);
-    height: auto;
+  opacity: 0;
+  transition: all .5s;
+  width: calc((100% - 68px) / 3);
+  height: auto;
+  transform: translateY(30px) scale(0.95);
+}
+
+.gallery__image_active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 .gallery__image:nth-child(3n + 1) {

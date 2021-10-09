@@ -29,12 +29,52 @@ function randomArr() {
     });
 }
 
-  randomArr(galleryInnerContainer, galleryArr)
+randomArr(galleryInnerContainer, galleryArr);
+
+function debounce(func, wait = 20, immediate = true) {
+    
+    var timeout;
+    return function() {
+        var context = this, args = arguments;
+        var later = function(){
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        }
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+        } 
+};
+
+const sliderImages = document.querySelectorAll('.gallery__image');
+
+
+function checksSlide(e) {
+    sliderImages.forEach(sliderImage => {
+        function getCoords(elem) {
+            var box = elem.getBoundingClientRect();
+            return top = box.top + pageYOffset;
+          }
+        const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+        const imageBottom = getCoords(sliderImage) + sliderImage.height;
+        const isHalfShown = slideInAt > getCoords(sliderImage);
+        const isNotScrolledPast = window.scrollY < imageBottom;
+        if (isHalfShown && isNotScrolledPast) {
+            sliderImage.classList.add('gallery__image_active');
+        } else {
+            sliderImage.classList.remove('gallery__image_active');
+        }
+    });
+};
+
+window.addEventListener('scroll', debounce(checksSlide));
+
 
 console.log("1. Вёрстка соответствует макету. Ширина экрана 1024px - 36 баллов (форма не соответсвует)");
 console.log("2. Вёрстка соответствует макету. Ширина экрана 768px - 36 баллов (форма не соответсвует)");
 console.log("3. Вёрстка соответствует макету. Ширина экрана 420px - 36 баллов (форма не соответсвует)");
-console.log("4.Совмещается адаптивная и респонсивная (резиновая) вёрстка +14");
+console.log("4. Совмещается адаптивная и респонсивная (резиновая) вёрстка +14");
 console.log("5. На ширине экрана 1024рх и меньше реализовано адаптивное меню +10 (меню не закрывается кликом на overlay)");
 console.log("6. Оптимизация скорости загрузки страницы +4 (82 (orange): Needs Improvement)");
 console.log("Итого: 142/160")
