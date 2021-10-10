@@ -40,6 +40,7 @@
 @import url(./blocks/popup/popup.css);
 @import url(./blocks/welcome/welcome.css);
 @import url(./blocks/body/body.css);
+@import url(./blocks/top-button/top-button.css);
 @font-face {
     font-family: Roboto;
     src: url(./assets/fonts/Roboto/Roboto-Regular.ttf);

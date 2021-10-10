@@ -44,7 +44,8 @@
         </div>
            <button class="menu-button menu-button__open" onclick="toggleMenu()"></button>
         </div>
-   </header> 
+   </header>
+   <a class="top-button" title="Наверх"></a>
    <main class="main">
        <section class="section welcome-section section-dark">
            <div class="container welcome-container">
@@ -171,12 +172,12 @@
                 <p class="video__text">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
             </div>
             <div class="video__player-container">
-                <img src="./assets/img/video/poster0.jpeg" alt="poster0" class="video__poster">
+                <video src="./assets/video/video0.mp4" poster="./assets/img/video/poster0.jpeg" class="video__poster"></video>
                 <div class="video__range-container">
-                    <button class="video__range-play"></button>
-                    <input type="range" value="50" class="video__range video__range_type_progress-bar">
+                    <button class="video__range-play toggle"></button>
+                    <input type="range" value="0" class="video__range video__range_type_progress-bar">
                     <button class="video__volume-button"></button>
-                    <input type="range" value="40" class="video__range video__range_type_volume">
+                    <input type="range" value="100" min="0" max="100" class="video__range video__range_type_volume">
                     <button class="video__full-screen"></button>
                 </div>
                 <button class="video__main-play"></button>
@@ -328,20 +329,20 @@
             <h2 class="section-title underline-title">buy tickets</h2>
             <div class="tickets__container">
                 <img class="tickets__image" alt="image" src="./assets/img/tickets-image.jpg">
-                <div class="tickets__order-container">
+                <form class="tickets__order-container">
                     <div class="tickets__type">
                         <h4 class="tickets__subtitle">Ticket Type</h4>
                         <div class="tickets__label-container">
                             <label class="tickets__label">
-                                <input type="radio" name="radio">
+                                <input type="radio" name="radio" id="permanent">
                                 <span class="tickets__text">Permanent exhibition</span>
                             </label>
                             <label class="tickets__label">
-                                <input type="radio" name="radio">
+                                <input type="radio" name="radio" id="temporary">
                                 <span class="tickets__text">Temporary exhibition</span>
                             </label>
                             <label class="tickets__label">
-                                <input type="radio" name="radio">
+                                <input type="radio" name="radio" id="combined">
                                 <span class="tickets__text">Combined exhibition</span>
                             </label>
                         </div>
@@ -351,21 +352,21 @@
                         <div class="tickets__amount-container">
                             <span class="tickets__text">Basic 18+</span>
                             <div class="tickets__number-container">
-                                <button class="tickets__number-button" type="button" onclick="this.nextElementSibling.stepDown()">&ndash;</button>
-                                <input type="number" min="0" max="20" value="1" readonly class="tickets__number">
-                                <button class="tickets__number-button" type="button" onclick="this.previousElementSibling.stepUp()">&plus;</button>
+                                <button class="tickets__number-button" type="button" onclick="this.nextElementSibling.stepDown(); totalAmount()">&ndash;</button>
+                                <input id="basic-number" type="number" min="0" max="20" value="" readonly class="tickets__number">
+                                <button class="tickets__number-button" type="button" onclick="this.previousElementSibling.stepUp(); totalAmount()">&plus;</button>
                             </div>
                             <span class="tickets__text">Senior 65+</span>
                             <div class="tickets__number-container">
-                                <button class="tickets__number-button" type="button" onclick="this.nextElementSibling.stepDown()">&ndash;</button>
-                                <input type="number" min="0" max="20" value="1" readonly class="tickets__number">
-                                <button class="tickets__number-button" type="button" onclick="this.previousElementSibling.stepUp()">&plus;</button>
+                                <button class="tickets__number-button" type="button" onclick="this.nextElementSibling.stepDown(); totalAmount()">&ndash;</button>
+                                <input id="senior-number" type="number" min="0" max="20" value="" readonly class="tickets__number">
+                                <button class="tickets__number-button" type="button" onclick="this.previousElementSibling.stepUp(); totalAmount()">&plus;</button>
                             </div>
                         </div>
-                        <p class="tickets__subtitle">Total &#8364;200</p>
+                        <p id="sum-tickets" class="tickets__subtitle"></p>
                         <button class="tickets__buy-button" onclick="openPopup()">Buy now</button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
        </section>
@@ -511,5 +512,7 @@
    <script src="js/popup.js"></script>
    <script src="js/burger-menu.js"></script>
    <script src="js/explore.js"></script>
+   <script src="js/tickets.js"></script>
+   <script src="js/top-button.js"></script>
 </body>
 </html>
