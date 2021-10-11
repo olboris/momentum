@@ -1,0 +1,21 @@
+.video-section {
+    padding: 90px 0 75px;
+}
+
+@media screen and (max-width: 1400px) {
+.video-section {
+    padding: 60px 0;
+}
+}
+
+@media screen and (max-width: 900px) {
+    .video-section {
+        padding: 40px 0 40px;
+    }
+    }
+
+@media screen and (max-width: 500px) {
+    .video-section {
+        padding: 36px 0 40px;
+    }
+    }

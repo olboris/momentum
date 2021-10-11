@@ -1,0 +1,14 @@
+.paralax {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url(../../assets/img/parallax-image.jpeg);
+}
+
+@media screen and (max-width: 900px) {
+    .paralax {
+        height: 300px;
+    }
+}
