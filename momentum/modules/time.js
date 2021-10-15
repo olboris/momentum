@@ -1,3 +1,5 @@
+import showGreeting from './greeting.js';
+
 const time = document.querySelector('.time');
 const dateField = document.querySelector('.date');
 
@@ -7,6 +9,7 @@ export default function showTime() {
     time.textContent = currentTime;
     showDate(date);
     setInterval(showTime, 1000);
+    showGreeting();
 }
 
 function showDate(date) {
