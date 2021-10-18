@@ -6,7 +6,7 @@ const timesOfDay = [
     'night'
 ];
 
-function getTimeOfDay(){
+export function getTimeOfDay(){
     const date = new Date();
     const hours = date.getHours();
     if (hours >= 6 && hours <12){
@@ -20,7 +20,7 @@ function getTimeOfDay(){
     }
 }
 
-export default function showGreeting(){
+export function showGreeting(){
     const greeting = getTimeOfDay();
     greetingField.textContent = `Good ${greeting},`;
 }
