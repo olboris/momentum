@@ -1,11 +1,13 @@
 import showTime from './modules/time.js';
 import {setBg, getSlideNext, getSlidePrev, randomNum} from './modules/slider.js';
-import getWeather from './modules/weather.js'
+import getWeather from './modules/weather.js';
+import getQuotes from './modules/quotes.js';
 
 const name = document.querySelector('.name');
 const city = document.querySelector('.city');
 const slideNext = document.querySelector('.slide-next');
 const slidePrev = document.querySelector('.slide-prev');
+const changeQuote = document.querySelector('.change-quote');
 
 function setLocalStorage() {
     localStorage.setItem('name', name.value);
@@ -25,7 +27,9 @@ window.addEventListener('load', getLocalStorage);
 
 showTime();
 getWeather(localStorage.getItem('city') || "Minsk");
+getQuotes();
 setBg(randomNum);
 slideNext.addEventListener('click', getSlideNext);
 slidePrev.addEventListener('click', getSlidePrev);
 city.addEventListener('change', ()=> {getWeather(city.value)});
+changeQuote.addEventListener('click', getQuotes);

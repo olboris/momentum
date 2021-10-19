@@ -27,7 +27,7 @@ export default async function getWeather(c) {
     weatherDescription.textContent = "";
     wind.textContent = "";
     humidity.textContent = "";
-    error.textContent = "Извините, мы не смогли получить данные о погоде в указанном городе";
+    error.textContent = "Invalid city name. Please, try again";
   }
   
 }
