@@ -11,11 +11,19 @@
 <body>
   <header class="header">
     <div class="player">
-      <audio class="audio" src = "./assets/sounds/Summer Wind.mp3"></audio>
+      <h2 class="audio-title"></h2>
+      <audio class="audio"></audio>
+      <input class="progress-bar" type="range" value="0"></input>
       <div class="player-controls">
         <button class="play-prev player-icon"></button>
         <button class="play player-icon"></button>
         <button class="play-next player-icon"></button>
+        <button class="play-mute player-icon"></button>
+        <div class="audio-time">
+          <div class="time-text time-current">0:00</div>
+          <div class="divider">/</div>
+          <div class="time-text time-length"></div>
+        </div>
       </div>
       <ul class="play-list"></ul>
     </div>

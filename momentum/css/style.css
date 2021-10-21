@@ -26,17 +26,58 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  height: 30vh;
+  height: auto;
   min-height: 220px;  
   padding: 20px;
+}
+
+.player {
+  width: 50%;
+  max-width: 300px;
+}
+
+.audio-title {
+  width: 100%;
+  height: 32px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #fff;  
+  background-color: transparent;
+  text-align: left;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 2px;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  float: left;
+  margin-bottom: 12px;
+  -webkit-appearance: none;
+  transform: background 450ms ease-in;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  width: 10px;
+  height: 7px;
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: #C5B358;
+}
+
+.audio-time {
+  display: flex; 
 }
 
 .player-controls {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 120px;
-  margin-bottom: 28px;
+  width: 300px;
+  margin-bottom: 11px;
 }
 
 .play-list {
@@ -58,15 +99,25 @@ body {
 }
 
 .play-item::before {
-  content: "\2713";  
+  background: url("../assets/svg/play.svg") center/contain;
+  content: "";
+  width: 16px;
+  height: 16px;
   position: absolute;
   left: 0;
-  top: 2px;
-  font-weight: 900;
+  top: 20%;
+}
+
+.item-active {
+  color: #C5B358;
 }
 
 .item-active::before {
-  color: #C5B358;
+  filter: invert(74%) sepia(60%) saturate(353%) hue-rotate(9deg) brightness(86%) contrast(90%);
+}
+
+.item-active-pause::before {
+  background: url("../assets/svg/pause.svg") center/contain;
 }
 
 .player-icon,
@@ -87,13 +138,15 @@ body {
 
 .player-icon:hover,
 .slider-icon:hover,
-.change-quote:hover {
+.change-quote:hover,
+.play-item::before {
   opacity: 1;
 }
 
 .player-icon:active,
 .slider-icon:active,
-.change-quote:active {
+.change-quote:active,
+.play-item::before:active {
   border: 0;
   outline: 0;  
   transform: scale(1.1);
@@ -116,6 +169,13 @@ body {
 
 .play-next {
   background-image: url("../assets/svg/play-next.svg");
+}
+
+.play-mute {
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-image: url("../assets/svg/volume.png");
 }
 
 .weather {
@@ -154,7 +214,7 @@ body {
   color: #fff;  
   border: 0;
   outline: 0;
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid #fff;
   background-color: transparent;
 }
 
