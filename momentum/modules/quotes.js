@@ -1,7 +1,7 @@
 const quote = document.querySelector('.quote');
 const author = document.querySelector('.author');
 
-export default async function getQuotes() {
+export default async function getQuotes(lang) {
     try {
         const quotes = 'quotes.json'
         const res = await fetch(quotes);
@@ -12,8 +12,8 @@ export default async function getQuotes() {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
         const id = getRandomNum(0, 9);
-        quote.textContent = data[id].en.text;
-        author.textContent = data[id].en.author;
+        quote.textContent = data[id][lang].text;
+        author.textContent = data[id][lang].author;
     }
     catch (err) {
         console.log(err);

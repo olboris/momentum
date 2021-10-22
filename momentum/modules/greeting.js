@@ -1,10 +1,15 @@
 const greetingField = document.querySelector('.greeting');
 const timesOfDay = [
-    'morning',
-    'afternoon',
-    'evening',
-    'night'
+    {'en':'Good morning', 'ru': 'Доброе утро'},
+    {'en': 'Good afternoon', 'ru': 'Добрый день'},
+    {'en': 'evening', 'ru': 'Добрый вечер'},
+    {'en': 'night', 'ru': 'Доброй ночи'}
 ];
+
+const placeholders = { 
+    'en': 'Enter name', 
+    'ru': 'Введите имя'
+};
 
 export function getTimeOfDay(){
     const date = new Date();
@@ -20,7 +25,8 @@ export function getTimeOfDay(){
     }
 }
 
-export function showGreeting(){
+export function showGreeting(lang, name){
     const greeting = getTimeOfDay();
-    greetingField.textContent = `Good ${greeting},`;
+    greetingField.textContent = `${greeting[lang]},`;
+    name.placeholder = `[${placeholders[lang]}]`;
 }

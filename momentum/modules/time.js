@@ -3,17 +3,17 @@ import {showGreeting} from './greeting.js';
 const time = document.querySelector('.time');
 const dateField = document.querySelector('.date');
 
-export default function showTime() {
+export default function showTime(lang, name) {
     const date = new Date();
     const currentTime = date.toLocaleTimeString();
     time.textContent = currentTime;
-    showDate(date);
+    showDate(date, lang);
     setTimeout(showTime, 1000);
-    showGreeting();
+    showGreeting(lang, name);
 }
 
-function showDate(date) {
+function showDate(date, lang) {
     const options = {weekday: 'long', month: 'long',  day: 'numeric'};
-    const currentDate = date.toLocaleDateString('en-EN', options);
+    const currentDate = date.toLocaleDateString(`${lang}-${String(lang).toUpperCase()}`, options);
     dateField.textContent = currentDate;
 }

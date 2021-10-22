@@ -31,7 +31,7 @@ export function setBg(randomNum) {
     let timeOfDay = getTimeOfDay();
     let bgNum = String(randomNum).padStart(2, '0');
     const img = new Image();
-    img.src = `https://raw.githubusercontent.com/olboris/stage1-tasks/assets/images/${timeOfDay}/${bgNum}.jpg`;
+    img.src = `https://raw.githubusercontent.com/olboris/stage1-tasks/assets/images/${timeOfDay.en.slice(5, timeOfDay.en.length)}/${bgNum}.jpg`;
     img.onload = () => {
         body.style.backgroundImage = `url(${img.src})`;
     }

@@ -48,15 +48,25 @@
     <date class="date"></date>
     <div class="greeting-container">
       <span class="greeting"></span>
-      <input type="text" class="name" placeholder="[Enter name]"/>
+      <input type="text" class="name"/>
     </div>
   </main>
   <footer class="footer">
-    <button class="change-quote"></button>
-    <div>
-      <div class="quote"></div>
-      <div class="author"></div>
+    <div class=settings>
+      <input type="radio" id="lang-ru" name="lang" value="ru">
+      <label for="lang-ru">Русский</label>
+      <input type="radio" id="lang-en" name="lang" value="en">
+      <label for="lang-en">English</label>
     </div>
+    <div class="quotes-container">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+      <div class=to-do></div>
+    </div>
+    
   </footer>
   <script type="module" src="./index.js"></script>
   <script type="module" src="./modules/audioplayer.js"></script>
