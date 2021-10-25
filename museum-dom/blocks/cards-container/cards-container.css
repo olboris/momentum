@@ -1,0 +1,24 @@
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 60px;
+    margin-top: 103px;
+}
+
+@media screen and (max-width:1400px) {
+    .cards-container {
+        justify-content: space-evenly;
+        margin-top: 83px;
+        row-gap: 50px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .cards-container {
+        margin-top: 63px;
+        margin-bottom: 40px;
+        row-gap: 30px;
+    }
+}

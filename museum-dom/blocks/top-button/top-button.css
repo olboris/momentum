@@ -1,0 +1,28 @@
+.top-button {
+    position: fixed;
+    bottom: 50%;
+    right: 40px;
+    z-index: 9;
+    width: 100px;
+    height: 100px;
+    background-image: url(../../assets/svg/top-button.png);
+    background-size: contain;
+    display: none;
+  }
+  
+  .top-button:hover {
+    opacity: 0.6;
+    transition: opacity 1s ease-out;
+    cursor: pointer;
+  }
+  
+  .top-button_active {
+    display: block;
+  }
+
+  @media screen and (max-width: 500px) {
+    .top-button {
+      width: 50px;
+      height: 50px;
+    }
+  }

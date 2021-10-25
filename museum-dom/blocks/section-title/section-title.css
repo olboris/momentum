@@ -1,0 +1,36 @@
+.section-title {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin:0;
+    color: rgba(157, 134, 101, 1);
+    text-transform: uppercase;
+}
+
+.section-title__theme_dark {
+    color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width:1400px) {
+    .section-title {
+        font-size: 50px; 
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section-title {
+        font-size: 40px;
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section-title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}

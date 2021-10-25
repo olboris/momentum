@@ -1,0 +1,28 @@
+.section {
+    padding: 75px 0;
+    position: relative;
+}
+
+.section__gallery {
+    padding-bottom: 0;
+}
+
+@media screen and (max-width:1400px) {
+    .section {
+        padding: 60px 0;
+    }
+
+    .section__gallery {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section {
+        padding: 40px 0;
+    }
+
+    .section__gallery {
+        padding-bottom: 0;
+    }
+}
