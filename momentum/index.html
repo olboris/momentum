@@ -52,22 +52,42 @@
     </div>
   </main>
   <footer class="footer">
-    <div class=settings>
-      <input type="radio" id="lang-ru" name="lang" value="ru">
-      <label for="lang-ru">Русский</label>
-      <input type="radio" id="lang-en" name="lang" value="en">
-      <label for="lang-en">English</label>
-    </div>
     <div class="quotes-container">
       <button class="change-quote"></button>
       <div>
         <div class="quote"></div>
         <div class="author"></div>
       </div>
-      <div class=to-do></div>
     </div>
-    
+    <div class=settings>
+      <input type="radio" id="lang-ru" name="lang" value="ru">
+      <label for="lang-ru">Русский</label>
+      <input type="radio" id="lang-en" name="lang" value="en">
+      <label for="lang-en">English</label>
+    </div>
+    <div class=links>
+      <h2 class=links-title>Links</h2>
+      <ul class="links-container">
+
+      </ul>
+      <div class="links-buttons">
+        <button class="links-subtitle"></button>
+        <button class="links-form-close"></button> 
+      </div>
+      <form class="links-form">
+        <input class="link-input" required placeholder="Name" type="text" id="link-title">
+        <input class="link-input" required placeholder="URL" type="url" id="link-url">
+        <input class="link-submit" type="submit" value="Add">
+      </form>
+    </div>
   </footer>
+  <template class="link-template">
+    <li class="link">
+      <img class="link-icon">
+      <a class="link-title"></a>
+      <button class="link-delete"></button>
+    </li>
+  </template>
   <script type="module" src="./index.js"></script>
   <script type="module" src="./modules/audioplayer.js"></script>
 </body>
