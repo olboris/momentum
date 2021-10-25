@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <h2 class="audio-title"></h2>
+      <audio class="audio"></audio>
+      <input class="progress-bar" type="range" value="0"></input>
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <button class="play-mute player-icon"></button>
+        <div class="audio-time">
+          <div class="time-text time-current">0:00</div>
+          <div class="divider">/</div>
+          <div class="time-text time-length"></div>
+        </div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name"/>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="quotes-container">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+    <div class="footer-settings">
+      <a href="https://github.com/olboris"><div class="github-link"></div></a>
+      <button class="settings-button"></button>
+      <div class=settings>
+        <div class="settings-leftblock">
+          <div class="settings-language">
+            <h3 class="settings-subtitle" id="lang-subtitle">Language</h3>
+            <div class="inputs-container">
+              <input class="settings-input" type="radio" id="lang-ru" name="lang" value="ru">
+              <label class="settings-label" for="lang-ru">Русский</label>
+              <input class="settings-input" type="radio" id="lang-en" name="lang" value="en">
+              <label class="settings-label"for="lang-en">English</label>
+            </div>
+          </div>
+          <div class="settings-background">
+            <h3 class="settings-subtitle" id="background-subtitle">Background images</h3>
+            <div class="inputs-container">
+              <input class="settings-input" type="radio" id="back-github" name="background" value="github">
+              <label class="settings-label" for="back-github">Github</label>
+              <input class="settings-input" type="radio" id="back-splash" name="background" value="splash">
+              <label class="settings-label" for="back-splash">Unsplash</label>
+            </div>
+            <input class="settings-text-input" type="text" placeholder="tag">
+          </div>
+        </div>
+        <div class="settings-blocks">
+          <h3 class="settings-subtitle" id="blocks-subtitle">Show</h3>
+          <input class="settings-input" type="checkbox" id="block-greeting" name="block" value="greeting">
+          <label class="settings-label" id="label-greeting" for="block-greeting"></label>
+          <input class="settings-input" type="checkbox" id="block-time" name="block" value="time">
+          <label class="settings-label" id="label-time" for="block-time"></label>
+          <input class="settings-input" type="checkbox" id="block-date" name="block" value="date">
+          <label class="settings-label" id="label-date" for="block-date"></label>
+          <input class="settings-input" type="checkbox" id="block-quotes" name="block" value="quotes">
+          <label class="settings-label" id="label-quotes" for="block-quotes"></label>
+          <input class="settings-input" type="checkbox" id="block-weather" name="block" value="weather">
+          <label class="settings-label" id="label-weather" for="block-weather"></label>
+          <input class="settings-input" type="checkbox" id="block-audioplayer" name="block" value="audioplayer">
+          <label class="settings-label" id="label-audioplayer" for="block-audioplayer"></label>
+          <input class="settings-input" type="checkbox" id="block-links" name="block" value="links">
+          <label class="settings-label" id="label-links" for="block-links"></label>
+        </div>
+      </div>
+      <a href="https://rs.school/js/"><div class="rss-link"></div></a>
+    </div>
+    <div class=links>
+      <h2 class=links-title>Links</h2>
+      <ul class="links-container"></ul>
+      <div class="links-buttons">
+        <button class="links-subtitle"></button>
+        <button class="links-form-close"></button> 
+      </div>
+      <form class="links-form">
+        <input class="link-input" required placeholder="Name" type="text" id="link-title"/>
+        <input class="link-input" required placeholder="URL" type="url" id="link-url"/>
+        <input class="link-submit" type="submit" value="Add"/>
+      </form>
+    </div>
+  </footer>
+  <template class="link-template">
+    <li class="link">
+      <img class="link-icon">
+      <a class="link-title"></a>
+      <button class="link-delete"></button>
+    </li>
+  </template>
+  <script type="module" src="./index.js"></script>
+  <script type="module" src="./modules/audioplayer.js"></script>
+</body>
+</html>

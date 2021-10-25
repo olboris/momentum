@@ -1,0 +1,103 @@
+[
+    { 
+            "en": {
+                "text": "'Only two things are infinite, the universe and human stupidity, and I'm not sure about the former.'",
+                "author": "Albert Einstein"
+            },
+            "ru": {
+                "text": "'Есть только две бесконечные вещи: Вселенная и глупость. Хотя насчет Вселенной я не уверен.'",
+                "author": "Альберт Эйнштейн"
+            }
+    },
+    { 
+            "en": {
+                "text": "'It is better to keep your mouth closed and let people think you are a fool than to open it and remove all doubt.'",
+                "author": "Mark Twain"
+            },
+            "ru": {
+                "text": "'Лучше молчать и показаться дураком, чем заговорить и развеять все сомнения.'",
+                "author": "Марк Твен"
+            }
+    },
+    { 
+            "en": {
+                "text": "'When everything seems to be going against you, remember that the airplane takes off against the wind, not with it.'",
+                "author": "Henry Ford"
+            },
+            "ru": {
+                "text": "'Когда кажется, что весь мир настроен против тебя, помни, что самолёт взлетает против ветра!'",
+                "author": "Генри Форд"
+            }
+    },
+    { 
+            "en": {
+                "text": "'The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts.'",
+                "author": "Bertrand Russell"
+            },
+            "ru": {
+                "text": "'Проблема этого мира в том, что глупцы и фанатики слишком уверены в себе, а умные люди полны сомнений.'",
+                "author": "Бертран Рассел"
+            }
+    },
+    { 
+            "en": {
+                "text": "'Do not pity the dead, Harry. Pity the living and above all, those who live without love.'",
+                "author": "Joanne Kathleen Rowling"
+            },
+            "ru": {
+                "text": "'Не жалей умерших. Жалей живых, и в особенности тех, кто живет без любви.'",
+                "author": "Джоан Кэтлин Роулинг"
+            }
+    },
+    { 
+            "en": {
+                "text": "'Beauty is in the eye of the beholder.'",
+                "author": "Oscar Wilde"
+            },
+            "ru": {
+                "text": "'Красота в глазах смотрящего.'",
+                "author": "Оскар Уайльд"
+            }
+    },
+    { 
+            "en": {
+                "text": "'I confess I do not know why, but looking at the stars always makes me dream.'",
+                "author": "Vincent van Gogh"
+            },
+            "ru": {
+                "text": "'Признаюсь, не знаю почему, но глядя на звезды мне всегда хочется мечтать.'",
+                "author": "Винсент Ван Гог"
+            }
+    },
+    { 
+            "en": {
+                "text": "'You're not important. You're not anything. Some day the load we're carrying with us may help someone.'",
+                "author": "Agatha Christie"
+            },
+            "ru": {
+                "text": "'Сами по себе мы ничего не значим. Не мы важны, а то, что мы храним в себе.'",
+                "author": "Рэй Брэдбери"
+            }
+    },
+    { 
+            "en": {
+                "text": "'No one else can ever feel your pain.'",
+                "author": "Colleen McCullough"
+            },
+            "ru": {
+                "text": "'Никому и никогда не испытать чужую боль, каждому суждена своя.'",
+                "author": "Колин Маккалоу"
+            }
+    },
+    { 
+            "en": {
+                "text": "'If you want to keep a secret, you must also hide it from yourself.'",
+                "author": "George Orwell"
+            },
+            "ru": {
+                "text": "'Если хочешь сохранить секрет, надо скрывать его и от себя.'",
+                "author": "Джордж Оруэлл"
+            }
+    }
+  ]  
+  
