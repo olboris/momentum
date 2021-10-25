@@ -15,7 +15,6 @@ export default async function getWeather(c, lang) {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${c}&lang=${lang}&appid=cc93cdf81a51fc4664dd4f70d431cf69&units=metric`;
     const res = await fetch(url);
     const data = await res.json(); 
-    console.log(data.weather[0].id, data.weather[0].description, data.main.temp, data.name, data.wind.speed, data.main.humidity);
   
     weatherIcon.className = 'weather-icon owf';
     weatherIcon.classList.add(`owf-${data.weather[0].id}`);

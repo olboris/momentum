@@ -9,22 +9,28 @@ function getRandomNum(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-export function getSlideNext() {
-    if (randomNum !== 20) {
-        randomNum += 1;
-    } else {
-        randomNum = 1
-    };
-    setBg(randomNum);
+export function getSlideNext(bgSettings, tag) {
+    if (bgSettings === '1') {
+        if (randomNum !== 20) {
+            randomNum += 1;
+        } else {
+            randomNum = 1
+        };
+        setBg(randomNum);
+    } else getLinkToImage(tag);
 }
 
-export function getSlidePrev() {
-    if (randomNum !== 1) {
-        randomNum -= 1;
+export function getSlidePrev(bgSettings, tag) {
+    if (bgSettings === '1') {
+        if (randomNum !== 1) {
+            randomNum -= 1;
+        } else {
+            randomNum = 20
+        };
+        setBg(randomNum);
     } else {
-        randomNum = 20
+        getLinkToImage(tag);
     };
-    setBg(randomNum);
 }
 
 export function setBg(randomNum) {
@@ -35,4 +41,23 @@ export function setBg(randomNum) {
     img.onload = () => {
         body.style.backgroundImage = `url(${img.src})`;
     }
-}
+};
+
+export async function getLinkToImage(tag) {
+    try {
+      let timeOfDay = getTimeOfDay();
+      let tagValue = (String(tag) !== 'null') ? tag : timeOfDay.en.slice(5, timeOfDay.en.length);
+      const url = `https://api.unsplash.com/photos/random?query=${tagValue}&client_id=TIc1F-peBWdjXskPknjhG9Zn82Mp_vSmvynA-U0evGY`;
+      const res = await fetch(url);
+      const data = await res.json();
+      const img = new Image();
+      img.src = data.urls.regular;
+      img.onload = () => {
+        body.style.backgroundImage = `url(${data.urls.regular})`;
+    }
+    }
+    catch (err) {
+      console.log(err);
+      setBg(randomNum);
+    }
+  }
