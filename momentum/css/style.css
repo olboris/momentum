@@ -117,7 +117,7 @@ body {
 }
 
 .item-active::before {
-  filter: invert(74%) sepia(60%) saturate(353%) hue-rotate(9deg) brightness(86%) contrast(90%);
+  filter: invert(50%) sepia(60%) saturate(353%) hue-rotate(9deg) brightness(86%) contrast(90%);
 }
 
 .item-active-pause::before {
