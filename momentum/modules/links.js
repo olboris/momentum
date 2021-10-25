@@ -79,4 +79,6 @@ export function closeForm() {
   linksForm.classList.remove('links-form_active');
   newLinkButton.classList.remove('links-subtitle_disable');
   closeFormButton.classList.remove('links-form-close_disable');
+  titleInput.value = '';
+  urlInput.value = '';
 }

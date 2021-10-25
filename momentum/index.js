@@ -45,6 +45,7 @@ function getLocalStorage() {
 window.addEventListener('load', getLocalStorage);
 
 showTime(lang, name);
+console.log(name);
 getWeather(localStorage.getItem('city') || defaultCity[lang], lang);
 getQuotes(lang);
 setBg(randomNum);

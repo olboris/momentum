@@ -415,14 +415,15 @@ body {
 }
 
 .link-input {
-  background: inherit;
-  width: 80%;
+  background-color: transparent;
+  width: 90%;
   text-align: left;
   height: 15px;
   text-decoration: none;
   color: #fff;
   border: none;
   font-size: 16px;
+  outline: 0;
 }
 
 .link-input::placeholder {  
@@ -437,7 +438,7 @@ body {
 .link-input:-webkit-autofill-focus,
 .link-input:-webkit-writing-mode {
   -webkit-text-fill-color: #fff;
-  background: inherit;
+  background: transparent;
   color: #fff;
   border: none;
   outline: none;
