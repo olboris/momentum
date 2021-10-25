@@ -1,14 +1,19 @@
 import {showGreeting} from './greeting.js';
-const time = document.querySelector('.time');
-const dateField = document.querySelector('.date');
+export const time = document.querySelector('.time');
+export const dateField = document.querySelector('.date');
+let timeoutID;
 
-export default function showTime(lang, name) {
+export function showTime(lang, name) {
     const date = new Date();
     const currentTime = date.toLocaleTimeString();
     time.textContent = currentTime;
     showDate(date, lang);
-    setTimeout(() => {showTime(lang, name)}, 1000);
+    timeoutID = setTimeout(() => {showTime(lang, name)}, 1000);
     showGreeting(lang, name);
+}
+
+export function stopTimeout() {
+    clearTimeout(timeoutID);
 }
 
 function showDate(date, lang) {

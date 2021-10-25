@@ -2,8 +2,8 @@ const greetingField = document.querySelector('.greeting');
 const timesOfDay = [
     {'en':'Good morning', 'ru': 'Доброе утро'},
     {'en': 'Good afternoon', 'ru': 'Добрый день'},
-    {'en': 'evening', 'ru': 'Добрый вечер'},
-    {'en': 'night', 'ru': 'Доброй ночи'}
+    {'en': 'Good evening', 'ru': 'Добрый вечер'},
+    {'en': 'Good night', 'ru': 'Доброй ночи'}
 ];
 
 const placeholders = { 
