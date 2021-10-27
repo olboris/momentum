@@ -5,6 +5,7 @@ let timeoutID;
 
 export function showTime(lang, name) {
     const date = new Date();
+    console.log(date);
     const currentTime = date.toLocaleTimeString();
     time.textContent = currentTime;
     showDate(date, lang);
@@ -17,7 +18,7 @@ export function stopTimeout() {
 }
 
 function showDate(date, lang) {
-    const options = {weekday: 'long', month: 'long',  day: 'numeric'};
+    const options = {weekday: 'long', month: 'long',  day: 'numeric', hour12: false};
     const currentDate = date.toLocaleDateString(`${lang}-${String(lang).toUpperCase()}`, options);
     dateField.textContent = currentDate;
 }
